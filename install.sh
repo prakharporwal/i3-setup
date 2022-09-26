@@ -15,6 +15,13 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 sudo apt update
 sudo apt install brave-browser
 
+# go install
+wget https://go.dev/dl/go1.19.1.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.19.1.linux-amd64.tar.gz
+
+go version
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
+
 sudo snap install code --classic
 
 sudo apt install zsh zsh-autosuggestions
