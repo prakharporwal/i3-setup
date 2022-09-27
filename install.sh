@@ -39,5 +39,9 @@ sudo apt upgrade
 sudo snap install goland --classic
 sudo snap install intellij-idea-community --classic
 
+# minikube
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
 # remove unecessary
 sudo apt autoremove
